@@ -13,8 +13,12 @@ class Unicorn {
     // for any method, we still have access to 'this' keyword
     console.log(this.color);
     if (this.color !== 'white') {
-      return false; 
+      return false;
     }
+  }
+
+  says(message) {
+    return `**;* ${message} *;**`;
   }
 }
 
