@@ -7,7 +7,7 @@ describe('Dragon', function() {
     assert.isFunction(Dragon);
   });
 
-  it.skip('should instantiate our good friend, Dragon', function() {
+  it('should instantiate our good friend, Dragon', function() {
     var smaug = new Dragon();
 
     assert.instanceOf(smaug, Dragon);
