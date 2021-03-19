@@ -1,4 +1,5 @@
 var assert = require('chai').assert;
+// testing, assertion library is called 'chai'
 var Unicorn = require('../exercises/unicorn');
 
 describe('Unicorn', function() {
@@ -17,7 +18,7 @@ describe('Unicorn', function() {
     var unicorn = new Unicorn('Bree');
 
     assert.equal(unicorn.name, 'Bree');
-    // unicorn.name is dot notation 
+    // unicorn.name is called "DOT NOTATION"
   });
 
   it('should be able to have a different name', function() {
@@ -32,7 +33,7 @@ describe('Unicorn', function() {
     assert.equal(unicorn.color, 'blue');
   });
 
-  it.skip('should be white as default', function() {
+  it.only('should be white as default', function() {
     var unicorn = new Unicorn('Louisa');
 
     assert.equal(unicorn.color, 'white');
