@@ -33,13 +33,13 @@ describe('Unicorn', function() {
     assert.equal(unicorn.color, 'blue');
   });
 
-  it.only('should be white as default', function() {
+  it('should be white as default', function() {
     var unicorn = new Unicorn('Louisa');
 
     assert.equal(unicorn.color, 'white');
   });
 
-  it.skip('should refute isWhite', function() {
+  it('should refute isWhite', function() {
     var unicorn = new Unicorn('Steve', 'red');
 
     assert.equal(unicorn.isWhite(), false);
